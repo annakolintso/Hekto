@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hekto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header-contacts">
+                        <div class="header-contacts__item">
+                            <img src="./src/images/mail.svg" alt="email" class="header-contacts__icon">
+                            <a href="mailto:mhhasanul@gmail.com" class="header-contacts__link">mhhasanul@gmail.com</a>
+                        </div>
+                        <div class="header-contacts__item">
+                            <img src="./src/images/phone.svg" alt="phone" class="header-contacts__icon">
+                            <a href="tel:1234567890" class="header-contacts__link">(12345)67890</a>
+                        </div>
+                    </div>
+                    <div class="header-info">
+                        <div class="dropdown" data-name="lang">
+                            <p class="dropdown__title" data-value="en">English</p>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-id="en">English</li>
+                                <li class="dropdown__item" data-id="ua">Ukrainian</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown" data-name="currency">
+                            <p class="dropdown__title" data-value="usd">USD</p>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-id="usd">USD</li>
+                                <li class="dropdown__item" data-id="eur">EUR</li>
+                                <li class="dropdown__item" data-id="uah">UAH</li>
+                            </ul>
+                        </div>
+                        <div class="header-info__item">
+                            <a href="/login.html" class="header-info__link">Login</a>
+                            <img src="./src/images/user.svg" alt="login" class="header-info__icon">
+                        </div>
+                        <div class="header-info__item">
+                            <a href="/login.html" class="header-info__link">Wishlist</a>
+                            <img src="./src/images/heart.svg" alt="wishlist" class="header-info__icon">
+                        </div>
+                        <img src="./src/images/cart.svg" alt="cart" class="header-info__cart">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__menu">
+                        <div class="logo">
+                            <a href="#" class="logo__link">Hekto</a>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#">Home</a></li>
+                            <li class="menu__item"><a href="#">Pages</a></li>
+                            <li class="menu__item"><a href="#">Products</a></li>
+                            <li class="menu__item"><a href="#">Blog</a></li>
+                            <li class="menu__item"><a href="#">Shop</a></li>
+                            <li class="menu__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <form class="search">
+                        <input class="search__input" type="text">
+                        <button class="search__button"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="swiper js-hero-slider">
+            <div class="swiper-wrapper hero-slider">
+                <div class="swiper-slide hero-slider__item">
+                    <img src="./src/images/image32.png" alt="lamp" class="hero-slider__img">
+                    <div class="hero-slider__content">
+                        <p class="hero-slider__subtitle">Best Furniture For Your Castle....</p>
+                        <h2 class="hero-slider__title">New Furniture Collection
+                            Trends in 2020</h2>
+                        <p class="hero-slider__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Magna in est adipiscing
+                            in phasellus non in justo.</p>
+                        <a href="#" class="hero-slider__link">Shop Now</a>
+                    </div>
+                    <div class="hero-slider__sale">
+                        <img src="./src/images/sofa.png" alt="sofa" class="hero-slider__img-sale">
+                        <p class="hero-slider__block">50%<br>off</p>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slider__item">
+                    <img src="./src/images/image32.png" alt="lamp" class="hero-slider__img">
+                    <div class="hero-slider__content">
+                        <p class="hero-slider__subtitle">Best Furniture For Your Castle....</p>
+                        <h2 class="hero-slider__title">New Furniture Collection
+                            Trends in 2020</h2>
+                        <p class="hero-slider__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Magna in est adipiscing
+                            in phasellus non in justo.</p>
+                        <a href="#" class="hero-slider__link">Shop Now</a>
+                    </div>
+                    <div class="hero-slider__sale">
+                        <img src="./src/images/sofa.png" alt="sofa" class="hero-slider__img-sale">
+                        <p class="hero-slider__block">50%<br>off</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="leatest-widget">
+        <div class="container">
+            <p class="leatest-widget__title main-title">Leatest Products</p>
+            <div class="tabs">
+                <ul class="leatest-widget__tabs tabs-items">
+                    <li class="leatest-widget__item tabs-item active" data-id="1">New Arrival</li>
+                    <li class="leatest-widget__item tabs-item" data-id="2">Best Seller</li>
+                    <li class="leatest-widget__item tabs-item" data-id="3">Featured</li>
+                    <li class="leatest-widget__item tabs-item" data-id="4">Special Offer</li>
+                </ul>
+                <div class="leatest-widget__lists tabs-list">
+                    <div class="leatest-widget__list tabs-content active" data-id="1">
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1166.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image3.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1168.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image23.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image33.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leatest-widget__list tabs-content" data-id="2">
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image3.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1166.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image23.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1166.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1168.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image33.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leatest-widget__list tabs-content" data-id="3">
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1166.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image3.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1168.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image33.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image23.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leatest-widget__list tabs-content" data-id="4">
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1166.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image23.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image33.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1168.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image3.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image3.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leatest-widget__product">
+                            <div class="leatest-widget__wrap">
+                                <img src="./src/images/image1.png" alt="sofa" class="leatest-widget__photo">
+                            </div>
+                            <div class="leatest-widget__details">
+                                <a href="#" class="leatest-widget__name">Comfort Handy Craft</a>
+                                <div class="leatest-widget__prices">
+                                    <p class="leatest-widget__price">$42.00</p>
+                                    <p class="leatest-widget__price-old">$65.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__container">
+                <div class="footer__wrap">
+                    <div class="footer__details">
+                        <div class="footer__logo">
+                            <a href="#" class="footer__link">Hekto</a>
+                        </div>
+                        <form class="footer-form">
+                            <input class="footer-form__input" type="text" placeholder="Enter Email Address">
+                            <button class="footer-form__button">Sign Up</button>
+                        </form>
+                        <p class="footer__text">Contact Info</p>
+                        <p class="footer__text">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Catagories</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">Laptops & Computers</a></li>
+                            <li class="footer__item"><a href="#">Cameras & Photography</a></li>
+                            <li class="footer__item"><a href="#">Smart Phones & Tablets</a></li>
+                            <li class="footer__item"><a href="#">Video Games & Consoles</a></li>
+                            <li class="footer__item"><a href="#">Waterproof Headphones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Customer Care</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">My Account</a></li>
+                            <li class="footer__item"><a href="#">Discount</a></li>
+                            <li class="footer__item"><a href="#">Returns</a></li>
+                            <li class="footer__item"><a href="#">Orders History</a></li>
+                            <li class="footer__item"><a href="#">Order Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Pages</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">Blog</a></li>
+                            <li class="footer__item"><a href="#">Browse the Shop</a></li>
+                            <li class="footer__item"><a href="#">Category</a></li>
+                            <li class="footer__item"><a href="#">Pre-Built Pages</a></li>
+                            <li class="footer__item"><a href="#">Visual Composer Elements</a></li>
+                            <li class="footer__item"><a href="#">WooCommerce Pages</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
