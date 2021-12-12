@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hekto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/common.css" rel="stylesheet" />
+    <link href="dist/signup.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header-contacts">
+                        <div class="header-contacts__item">
+                            <img src="./src/images/mail.svg" alt="email" class="header-contacts__icon">
+                            <a href="mailto:mhhasanul@gmail.com" class="header-contacts__link">mhhasanul@gmail.com</a>
+                        </div>
+                        <div class="header-contacts__item">
+                            <img src="./src/images/phone.svg" alt="phone" class="header-contacts__icon">
+                            <a href="tel:1234567890" class="header-contacts__link">(12345)67890</a>
+                        </div>
+                    </div>
+                    <div class="header-info">
+                        <div class="dropdown" data-name="lang">
+                            <p class="dropdown__title" data-value="en">English</p>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-id="en">English</li>
+                                <li class="dropdown__item" data-id="ua">Ukrainian</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown" data-name="currency">
+                            <p class="dropdown__title" data-value="usd">USD</p>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item" data-id="usd">USD</li>
+                                <li class="dropdown__item" data-id="eur">EUR</li>
+                                <li class="dropdown__item" data-id="uah">UAH</li>
+                            </ul>
+                        </div>
+                        <div class="header-info__item">
+                            <a href="./signUp.html" class="header-info__link">Login</a>
+                            <img src="./src/images/user.svg" alt="login" class="header-info__icon">
+                        </div>
+                        <div class="header-info__item">
+                            <a href="/login.html" class="header-info__link">Wishlist</a>
+                            <img src="./src/images/heart.svg" alt="wishlist" class="header-info__icon">
+                        </div>
+                        <img src="./src/images/cart.svg" alt="cart" class="header-info__cart">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__menu">
+                        <div class="logo">
+                            <a href="./index.html" class="logo__link">Hekto</a>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#">Home</a></li>
+                            <li class="menu__item"><a href="#">Pages</a></li>
+                            <li class="menu__item"><a href="#">Products</a></li>
+                            <li class="menu__item"><a href="#">Blog</a></li>
+                            <li class="menu__item"><a href="#">Shop</a></li>
+                            <li class="menu__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <form class="search">
+                        <input class="search__input" type="text">
+                        <button class="search__button"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="signup">
+        <div class="container">
+            <div class="signup__block">
+                <h2 class="signup__title">Sign Up</h2>
+                <p class="signup__desc">Please sign up using account detail bellow.</p>
+                <form class="signup__form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-group__input" placeholder="Your name">
+                        <span class="form-group__error">Required field</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-group__input" placeholder="Email Address">
+                        <span class="form-group__error">Required field</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-group__input" placeholder="Password">
+                        <span class="form-group__error">Required field</span>
+                    </div>
+                    <button class="signup__button">Sign up</button>
+                    <span class="signup__success">Form submitted</span>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__container">
+                <div class="footer__wrap">
+                    <div class="footer__details">
+                        <div class="footer__logo">
+                            <a href="#" class="footer__link">Hekto</a>
+                        </div>
+                        <form class="footer-form">
+                            <input class="footer-form__input" type="text" placeholder="Enter Email Address">
+                            <button class="footer-form__button">Sign Up</button>
+                        </form>
+                        <p class="footer__text">Contact Info</p>
+                        <p class="footer__text">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Catagories</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">Laptops & Computers</a></li>
+                            <li class="footer__item"><a href="#">Cameras & Photography</a></li>
+                            <li class="footer__item"><a href="#">Smart Phones & Tablets</a></li>
+                            <li class="footer__item"><a href="#">Video Games & Consoles</a></li>
+                            <li class="footer__item"><a href="#">Waterproof Headphones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Customer Care</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">My Account</a></li>
+                            <li class="footer__item"><a href="#">Discount</a></li>
+                            <li class="footer__item"><a href="#">Returns</a></li>
+                            <li class="footer__item"><a href="#">Orders History</a></li>
+                            <li class="footer__item"><a href="#">Order Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__title">Pages</p>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#">Blog</a></li>
+                            <li class="footer__item"><a href="#">Browse the Shop</a></li>
+                            <li class="footer__item"><a href="#">Category</a></li>
+                            <li class="footer__item"><a href="#">Pre-Built Pages</a></li>
+                            <li class="footer__item"><a href="#">Visual Composer Elements</a></li>
+                            <li class="footer__item"><a href="#">WooCommerce Pages</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./dist/common.bundle.js"></script>
+    <script src="./dist/signup.bundle.js"></script>
+</body>
+
+</html>
