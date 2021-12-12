@@ -6,7 +6,7 @@ export const createDropdown = () => {
         const title = dropdown.querySelector('.dropdown__title');
         const dropdownName = dropdown.dataset.name;
 
-        if (parsedData.hasOwnProperty(dropdownName)) {
+        if (Object.prototype.hasOwnProperty.call(parsedData, dropdownName)) {
             title.textContent = parsedData[dropdownName].text;
             title.dataset.value = parsedData[dropdownName].value;
         }
@@ -17,7 +17,7 @@ export const createDropdown = () => {
             if (titleValue === itemId) {
                 item.classList.add('active');
             }
-            item.addEventListener('click', event => {
+            item.addEventListener('click', () => {
                 title.textContent = item.textContent;
                 let activeItem = dropdown.querySelector('.dropdown__item.active');
                 activeItem.classList.remove('active');

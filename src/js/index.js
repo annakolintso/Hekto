@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/scss';
 import { createDropdown, createTabs } from "./helper";
 
-const swiper = new Swiper(".js-hero-slider", {
+new Swiper(".js-hero-slider", {
     loop: true,
     pagination: {
         el: ".swiper-pagination",

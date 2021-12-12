@@ -5,7 +5,7 @@ const inputs = form.querySelectorAll('.form-group__input');
 const successText = document.querySelector('.signup__success');
 
 const validation = () => {
-    const countError = 0;
+    let countError = 0;
     inputs.forEach(el => {
         const formGroup = el.closest('.form-group');
         if(el.value === '') {
