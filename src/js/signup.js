@@ -57,7 +57,7 @@ form.addEventListener('submit', (e) => {
     const validated = validation();
     const formData = getFormData();
     if (validated) {
-        fetch('http://jsonplaceholder.typicode.com/posts', {
+        fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'
