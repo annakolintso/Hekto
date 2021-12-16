@@ -54,6 +54,11 @@ const setCookie = (cname, cvalue, exdays) => {
   document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 };
 
+const getCookie = (name) => {
+  const matches = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+};
+
 inputs.forEach((el) => {
   el.addEventListener('blur', () => {
     validationField(el);
@@ -65,7 +70,9 @@ form.addEventListener('submit', (e) => {
   const validated = validation();
   const formData = getFormData();
   if (validated) {
-    setCookie('formData', JSON.stringify(formData), 2);
+    const getFormData = getCookie('formData');
+    const result = JSON.stringify(formData) + getFormData;
+    setCookie('formData', result, 2);
     fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
       headers: {
